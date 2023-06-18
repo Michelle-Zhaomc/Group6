@@ -11,4 +11,30 @@ package ca.sheridancollege.project;
  */
 public class GroupOfGofishPlayer {
     
+    public static final int FISRSTHAND =5;
+    private GroupOfCards cardsGroup;
+    private Player[] groupPlayers;
+    private int numPlayers;
+    
+    public GroupOfGofishPlayer(){}
+    
+    public GroupOfGofishPlayer(GroupOfCards cardsGroup, int numPlayers){
+         this.cardsGroup = cardsGroup;
+         this.numPlayers = numPlayers;
+         this.groupPlayers = new Player[numPlayers];
+    }
+    
+    public void setFirstRound(){
+        cardsGroup.shuffle();
+        for(int i =0; i<numPlayers;i++){
+            GofishPlayer player = new GofishPlayer(groupPlayers[i].getName()); 
+            for(int count=0; count<FISRSTHAND;count++){
+               Card card = cardsGroup.getCards().remove(0);
+               player.addPlayerCards(card);
+               
+            }
+        }    
+    }
+    
+
 }

@@ -4,6 +4,7 @@
  * Add your name as an author and the date!
  */
 package ca.sheridancollege.project;
+import java.util.ArrayList;
 
 /**
  * A class that models each Player in the game. Players have an identifier, which should be unique.
@@ -14,14 +15,17 @@ package ca.sheridancollege.project;
 public abstract class Player {
 
     private String name; //the unique name for this player
-
+     private ArrayList<String> names;
     /**
      * A constructor that allows you to set the player's unique ID
      *
      * @param name the unique ID to assign to this player.
      */
+    public Player(){}
+    
     public Player(String name) {
-        this.name = name;
+        this.setName(name);
+        this.names.add(name);
     }
 
     /**
@@ -36,8 +40,13 @@ public abstract class Player {
      *
      * @param name the player name to set
      */
-    public void setName(String name) {
-        this.name = name;
+     public void setName(String name) {
+        if(names.contains(name)){
+            throw new IllegalArgumentException("Error! Name must be unique.");
+        }else{
+            this.name = name;
+        }
+        
     }
 
     /**

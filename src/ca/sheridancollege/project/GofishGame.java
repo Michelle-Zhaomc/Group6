@@ -9,6 +9,22 @@ package ca.sheridancollege.project;
   * @author Xiaoyi Zhang  991711956
  *          Meichao Zhao  991719472 
  */
-public class GofishGame {
+public class GofishGame extends Game{
+    int cardOnHand;
     
+    public GofishGame(){
+    }
+    
+    public GofishGame(String name, int cardOnHand){
+        super(name);
+        this.cardOnHand = cardOnHand;
+    }
+    
+    public void play(){
+        
+    }
+    
+    public void declareWinner(){
+    
+    }
 }
