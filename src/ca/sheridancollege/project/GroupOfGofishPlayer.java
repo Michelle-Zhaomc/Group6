@@ -23,18 +23,5 @@ public class GroupOfGofishPlayer {
          this.numPlayers = numPlayers;
          this.groupPlayers = new Player[numPlayers];
     }
-    
-    public void setFirstRound(){
-        cardsGroup.shuffle();
-        for(int i =0; i<numPlayers;i++){
-            GofishPlayer player = new GofishPlayer(groupPlayers[i].getName()); 
-            for(int count=0; count<FISRSTHAND;count++){
-               Card card = cardsGroup.getCards().remove(0);
-               player.addPlayerCards(card);
-               
-            }
-        }    
-    }
-    
 
 }

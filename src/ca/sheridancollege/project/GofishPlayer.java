@@ -46,29 +46,7 @@ public class GofishPlayer extends Player{
     public int numCards(){
      return cardsOnHand.size();
     }
-    
-    public String maxCard(){
-        String maxCard=null;
-        int maxCount=0;
-        
-        for(int i =0; i<cardsOnHand.size(); i++){
-            int count=0;
-            for(int j=0; j<cardsOnHand.size(); j++){
-                if(cardsOnHand.get(i).getCardRank().equals(cardsOnHand.get(j).getCardRank())){
-                
-                    count++;
-                }
-            }
-            if (count>maxCount){
-                maxCount=count;
-                maxCard=cardsOnHand.get(i).getCardRank();
-            }
-        }
-        
-        return maxCard;
-    }
-    
-    
+
     @Override
     public void play(){
         System.out.println("TBD");
