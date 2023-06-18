@@ -2,8 +2,8 @@
  * SYST 17796 Project Base code.
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
- * Modifier: Meichao Zhao  991719472
- *           Xiaoyi Zhang  991711956  happy
+ * Modifier: Meichao Zhao  991719472  
+ *           Xiaoyi Zhang  991711956  
  */
 package ca.sheridancollege.project;
 
