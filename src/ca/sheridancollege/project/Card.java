@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
  * Modifier: Meichao Zhao  991719472
- *           Xiaoyi Zhang  991711956
+ *           Xiaoyi Zhang  991711956  happy
  */
 package ca.sheridancollege.project;
 
