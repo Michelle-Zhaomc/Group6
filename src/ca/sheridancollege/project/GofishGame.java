@@ -6,7 +6,8 @@ package ca.sheridancollege.project;
 
 /**
  *
- * @author Xiaoyi Zhang
+  * @author Xiaoyi Zhang  991711956
+ *          Meichao Zhao  991719472 
  */
 public class GofishGame {
     

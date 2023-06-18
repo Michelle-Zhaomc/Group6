@@ -13,6 +13,8 @@ import java.util.ArrayList;
  *
  * @author dancye
  * @author Paul Bonenfant Jan 2020
+ * @Modiifer Xiaoyi Zhang  991711956
+ *           Meichao Zhao  991719472 
  */
 public abstract class Game {
 
