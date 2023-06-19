@@ -19,11 +19,14 @@ public class GofishPlayer extends Player{
     public GofishPlayer(String name){
         super(name);
         this.cardsOnHand= new ArrayList<>();
-        //this.groupPlayers = new GofishPlayer[numOfPlayer()];
-        //this.cardsGroup = new GroupOfCards(size);
+        
     }
-    
-    /**/
+
+    /**
+     *
+     * @param card
+     */
+
     
     public void addPlayerCards(Card card){
             this.cardsOnHand.add(card);   
