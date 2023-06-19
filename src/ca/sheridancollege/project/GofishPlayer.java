@@ -14,6 +14,8 @@ public class GofishPlayer extends Player{
     private String role;
     private ArrayList<Card> cardsOnHand;// cards on each player's hand
     
+    public GofishPlayer(){}
+    
     public GofishPlayer(String name){
         super(name);
         this.cardsOnHand= new ArrayList<>();
