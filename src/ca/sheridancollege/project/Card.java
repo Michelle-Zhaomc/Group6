@@ -32,19 +32,19 @@ public abstract class Card {
         this.rank = rank;
     }
     
-    public String getCardSuit(){
+    public String getSuit(){
         return this.suit;
     }
     
-    public void setCardSuit(String suit){
+    public void setSuit(String suit){
         this.suit=suit;
     }
     
-     public String getCardRank(){
+     public String getRank(){
         return this.rank;
     }
      
-     public void setCardRank(String rank){
+     public void setRank(String rank){
         this.rank=rank;
     }
      

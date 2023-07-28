@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ca.sheridancollege.project;
 import java.util.ArrayList;
 /**
@@ -11,66 +7,46 @@ import java.util.ArrayList;
  */
 public class GofishPlayer extends Player{
     
-    private String role;
-    private ArrayList<Card> cardsOnHand;// cards on each player's hand
-    
-    public GofishPlayer(String name){
-        super(name);
-        this.cardsOnHand= new ArrayList<>();
-        //this.groupPlayers = new GofishPlayer[numOfPlayer()];
-        //this.cardsGroup = new GroupOfCards(size);
+   private ArrayList<GofishCard> hand;
+
+   public GofishPlayer() {
+		// TODO - implement GofishPlayer.GofishPlayer
+	throw new UnsupportedOperationException();
+   }
+
+	/**
+	 * 
+	 * @param name
+	 */
+    public GofishPlayer(String name) {
+		// TODO - implement GofishPlayer.GofishPlayer
+	throw new UnsupportedOperationException();
     }
-    
-    /**/
-    
-    public void addPlayerCards(Card card){
-            this.cardsOnHand.add(card);   
+
+    public ArrayList<GofishCard> getHand() {
+	return this.hand;
     }
-    
-    public void removePlayerCards(Card card){
-            this.cardsOnHand.remove(card);
+
+	/**
+	 * 
+	 * @param hand
+	 */
+    public void setHand(ArrayList<GofishCard> hand) {
+	this.hand = hand;
     }
-    
-    public ArrayList<Card> getPlayerCards(){
-        return this.cardsOnHand;
+
+    public void play() {
+		// TODO - implement GofishPlayer.play
+	throw new UnsupportedOperationException();
     }
-    
-    public void setRole(String role){
-        this.role=role;
+
+    public boolean callFetch() {
+		// TODO - implement GofishPlayer.callFetch
+	throw new UnsupportedOperationException();
     }
-    
-    public String getRole(){
-        return this.role;
-    }
-    
-    public int numCards(){
-     return cardsOnHand.size();
-    }
-    
-    public String maxCard(){
-        String maxCard=null;
-        int maxCount=0;
-        
-        for(int i =0; i<cardsOnHand.size(); i++){
-            int count=0;
-            for(int j=0; j<cardsOnHand.size(); j++){
-                if(cardsOnHand.get(i).getCardRank().equals(cardsOnHand.get(j).getCardRank())){
-                
-                    count++;
-                }
-            }
-            if (count>maxCount){
-                maxCount=count;
-                maxCard=cardsOnHand.get(i).getCardRank();
-            }
-        }
-        
-        return maxCard;
-    }
-    
-    
-    @Override
-    public void play(){
-        System.out.println("TBD");
-    }
+
+    public boolean takeFetch() {
+		// TODO - implement GofishPlayer.takeFetch
+	throw new UnsupportedOperationException();
+   }
 }

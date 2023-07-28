@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ca.sheridancollege.project;
 
 /**
@@ -10,21 +6,29 @@ package ca.sheridancollege.project;
  *          Meichao Zhao  991719472 
  */
 public class GofishGame extends Game{
-    int cardOnHand;
+    GofishDeck gofishDeck;
     
     public GofishGame(){
     }
     
-    public GofishGame(String name, int cardOnHand){
+    public GofishGame(String name, GofishDeck gofishDeck){
         super(name);
-        this.cardOnHand = cardOnHand;
+        this.gofishDeck = gofishDeck;
     }
     
-    public void play(){
-        
-    }
-    
-    public void declareWinner(){
-    
-    }
+    public void addPlayer(int player, int GofishPlayer) {
+		// TODO - implement GofishGame.addPlayer
+		throw new UnsupportedOperationException();
+	}
+       
+    @override
+	public void notifyPlayers() {
+		// TODO - implement GofishGame.notifyPlayers
+		throw new UnsupportedOperationException();
+	}
+
+	public void declareWinner() {
+		// TODO - implement GofishGame.declareWinner
+		throw new UnsupportedOperationException();
+	}
 }
